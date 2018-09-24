@@ -1,0 +1,21 @@
+{
+    "name": "rikz/composer-example-package",
+    "description": "Example project",
+    "type": "library",
+    "require": {
+        "php": "^7.1"
+    },
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "RikzMC.Mpeg",
+            "email": "rikzgt1@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "rikz\\parser\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
