@@ -1,5 +1,5 @@
 <?php
-namespace lukesky\parser;
+namespace rikz\parser;
 /**
  * @author Victor Zinchenko <zinchenko.us@gmail.com>
  */
