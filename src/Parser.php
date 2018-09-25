@@ -4,13 +4,15 @@ namespace rikz\parser;
 
 class Parser implements ParserInterface
 {
-	public function process(string $url, string $tag)
+	public function process(string $url, string $tag): array
 	{
 		$htmlPage = file_get_contents($url);
 
 		if ($htmlPage == false) {
 			return ['Invalid URL'];
 		}
+
+		// Regular expression
 
 		preg_match_all('/<'. $tag . '.*?>(.*?)<\/' . $tag . '>/s', $htmlPage, $strings);
 

@@ -1,8 +1,14 @@
 <?php
-
-namespace rikz\parser;
-
+namespace lukesky\parser;
+/**
+ * @author Victor Zinchenko <zinchenko.us@gmail.com>
+ */
 interface ParserInterface
 {
-	public function process(string $url, string $tag) :array;
+	/**
+	 * @param string $url
+	 * @param string $tag
+	 * @return array
+	 */
+	public function process(string $url, string $tag): array;
 }
